@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    let product={
+      company: 'Mango',
+      price:861,
+      item_name:'T-shirt',
+      displayPrice: function(){
+        console.log(`Price of the product is ₹${this.price}`)
+      }
+    };
+    // console.log(product);
+    // console.log(product.company);
+    // console.log(product.price);
+    // console.log(product.item_name);
+    // product.company='Banana';
+    // console.log(product);
+
+
+    // console.log(product['company']);
+
+    // delete product.company;
+    // console.log(product);
+    // product.displayPrice();
+
+    // console.log('This is KG Coding'.length);
+
+
+    // let a=5;
+    // let b=a;
+    // console.log(`a=${a}, b=${b}`);
+    // a=8;
+    // console.log(`a=${a}, b=${b}`);
+
+      product={
+      company: 'Mango',
+      price:861,
+      item_name:'T-shirt',
+      displayPrice: function(){
+        console.log(`Price of the product is ₹${this.price}`)
+      }
+    };
+
+    let{company,price}=product;
+    console.log(company);
+    console.log(price);
+
+  </script>
+</body>
+</html>
